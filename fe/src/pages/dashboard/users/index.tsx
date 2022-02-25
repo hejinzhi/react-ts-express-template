@@ -97,6 +97,7 @@ const UserPage: FC = () => {
       },
     },
   ];
+
   const columns: ProColumns<User>[] = [
     ...columnArray,
     {
