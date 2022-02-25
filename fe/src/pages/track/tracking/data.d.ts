@@ -1,0 +1,36 @@
+export interface Tracking {
+  id: number | null;
+  type: string;
+  shipDate: string;
+  shipNo: string;
+  shipType: string;
+  tripType: string;
+  fromLocation: string;
+  fromPort: string;
+  targetPort: string;
+  productName: string;
+  productQty: string;
+  guiQty: string;
+  weight: string;
+  tiji: string;
+  tripName: string;
+  baoguan: string;
+  guiNum: string;
+  ftNum: string;
+  carNum: string;
+  firstEtd: string;
+  firstEta: string;
+  secondPort: string;
+  secondEtd: string;
+  secondEta: string;
+  arrivedDate: string;
+  remark: string;
+  supplier: string;
+  warehouseEta: string;
+  destPort: string;
+  address: string;
+  opName: string;
+  ywName: string;
+  customName: string;
+  deptName: string;
+}

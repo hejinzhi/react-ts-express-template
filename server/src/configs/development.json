@@ -1,0 +1,10 @@
+{
+  "env": "production",
+  "dbConfig": {
+    "host": "xxx",
+    "user": "xxx",
+    "password": "xxx",
+    "database": "xxx"
+  },
+  "jwtSecretKey": "daskjdkasjfjsdfksdjfk"
+}

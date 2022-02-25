@@ -1,0 +1,25 @@
+export default {
+  'menu.welcome': '欢迎',
+  'menu.more-blocks': '更多区块',
+  'menu.home': '首页',
+  'menu.admin': '管理页',
+  'menu.admin.sub-page': '二级管理页',
+  'menu.login': '登录',
+  'menu.register': '注册',
+  'menu.register-result': '注册结果',
+  'menu.dashboard': '首页',
+  'menu.dashboard.analysis': '分析页',
+  'menu.dashboard.monitor': '监控页',
+  'menu.dashboard.workplace': '工作台',
+  'menu.dashboard.auth': '工作台',
+  'menu.exception.403': '403',
+  'menu.exception.404': '404',
+  'menu.exception.500': '500',
+
+  ////////
+  'menu.permission': '权限管理',
+  'menu.permission.users': '用户管理',
+  'menu.permission.menu': '菜单管理',
+  'menu.permission.role': '角色管理',
+  'menu.permission.dept': '部门管理',
+};
