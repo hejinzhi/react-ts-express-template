@@ -22,6 +22,7 @@ import os from 'os';
 const bodyParser = require('body-parser');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('body-parser-xml')(bodyParser);
+require('express-async-errors');
 
 class App {
   public app: express.Application;
