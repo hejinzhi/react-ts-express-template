@@ -1,8 +1,8 @@
 import { Column, Entity} from 'typeorm';
 import { Abstract } from './abstract.entity';
 
-@Entity('dept')
-export class Dept extends Abstract {
+@Entity('feedback')
+export class Feedback extends Abstract {
   @Column({
     default: '',
   })
