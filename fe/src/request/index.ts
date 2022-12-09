@@ -1,4 +1,5 @@
 // import { message } from 'antd';
+import { baseUrl } from '@/config';
 import { message } from 'antd';
 import { extend } from 'umi-request';
 
@@ -17,7 +18,7 @@ const errorHandler = function (error: any) {
 };
 
 const request = extend({
-  prefix: 'http://localhost:3389/api',
+  prefix: baseUrl,
   // prefix: 'http://fs-open.fanshuquan.club/api',
   timeout: 30000,
   headers: {
@@ -27,11 +28,11 @@ const request = extend({
 });
 
 request.interceptors.request.use((url, options) => {
-  const token = localStorage.getItem('token') || '';
-  const authHeader = { Authorization: `bearer ${token}` };
+  // const token = localStorage.getItem('token') || '';
+  // const authHeader = { Authorization: `bearer ${token}` };
   return {
     url: url,
-    options: { ...options, interceptors: true, headers: authHeader },
+    options: { ...options, interceptors: true, headers: {} },
   };
 });
 

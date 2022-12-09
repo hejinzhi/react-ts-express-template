@@ -60,19 +60,21 @@ const Login: React.FC = () => {
           defaultMessage: '登录成功！',
         });
         message.success(defaultLoginSuccessMessage);
-        const userInfo = await fetchUserInfo();
+        await fetchUserInfo();
+        history.push('/dashboard/auth');
+        // const userInfo = await fetchUserInfo();
 
-        /** 此方法会跳转到 redirect 参数所在的位置 */
-        if (!history) return;
-        const { query } = history.location;
-        const { redirect } = query as { redirect: string };
-        const permissions = userInfo!.permissions.split(',');
-        const index = permissions.findIndex((v) => v.substring(0, 1) === '/');
-        let firstPath = '/';
-        if (index > -1) {
-          firstPath = permissions[index];
-        }
-        history.push(firstPath || redirect);
+        // /** 此方法会跳转到 redirect 参数所在的位置 */
+        // if (!history) return;
+        // const { query } = history.location;
+        // const { redirect } = query as { redirect: string };
+        // const permissions = userInfo!.permissions.split(',');
+        // const index = permissions.findIndex((v) => v.substring(0, 1) === '/');
+        // let firstPath = '/';
+        // if (index > -1) {
+        //   firstPath = permissions[index];
+        // }
+        // history.push(firstPath || redirect);
         return;
       } else {
         message.error(tokenRes.msg);
